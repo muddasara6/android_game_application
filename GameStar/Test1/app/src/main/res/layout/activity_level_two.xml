@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb"
+    tools:context=".LevelTwo">
+
+    <FrameLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_border">
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Score : 0"
+            android:textSize="18sp"
+            android:textColor="#1a1a1a"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/levelLabel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Lv. 2"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:paddingLeft="25dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/livesLabel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Lives : 3"
+            android:textSize="18sp"
+            android:paddingLeft="25dp"
+            android:textColor="#1a1a1a"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/gameFrame"
+        android:layout_width="match_parent"
+        android:layout_height="536dp">
+
+        <ImageView
+            android:id="@+id/bag"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bag1"
+            android:layout_gravity="left"
+            android:layout_marginTop="460dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/circle"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/gold_star"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/square"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/square"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GameStar"
+                android:textColor="#1a1a1a"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/pickedLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 2"
+                android:textColor="#FF0000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="70dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="START"
+                android:layout_marginTop="50dp"
+                android:onClick="startGame"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCORE TABLE"
+                android:layout_marginTop="10dp"
+                android:onClick="scoreTable"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUIT"
+                android:layout_marginTop="10dp"
+                android:onClick="quitGame"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/layout_border">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/home"
+            android:paddingTop="5dp"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            android:onClick="home"/>
+
+        <TextView
+            android:id="@+id/tapLabel"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="Tap to move bag"
+            android:textSize="18sp"
+            android:textColor="#1a1a1a"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/pause"
+            android:paddingTop="5dp"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            android:onClick="pause"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="#ebebeb"
+    tools:context=".ScoreTable">
+
+    <TextView
+        android:id="@+id/scoreTableHeader"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#1a1a1a"
+        android:gravity="center"
+        android:text="SCORE TABLE"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/displayHeaders"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
+        android:scrollbars="horizontal"
+        android:text="First Name           Last Name           Score"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <ListView
+        android:id="@+id/viewFirstName"
+        android:layout_width="120dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="190dp"
+        android:layout_gravity="center"
+        android:scrollbars="vertical"
+        android:textSize="18dp" />
+
+    <ListView
+        android:id="@+id/viewLastName"
+        android:layout_width="120dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="135dp"
+        android:layout_gravity="center"
+        android:scrollbars="vertical"
+        android:textSize="18dp" />
+
+    <ListView
+        android:id="@+id/viewScore"
+        android:layout_width="90dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="265dp"
+        android:layout_gravity="center"
+        android:scrollbars="vertical"
+        android:textSize="18dp" />
+
+</RelativeLayout>
